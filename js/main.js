@@ -10,20 +10,18 @@
   if (min < 0 || min >= max) {
       return NaN
   }
-  return Math.floor(Math.random() * (max - min + 1) ) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-getRandomInt();
-
-
-
+getRandomInt(0,100);
 
 // Функция №2
 // Прверка длины комментария
 
+const line = 'Lets check function!'
 function checkLength(line, maxLength) {
   if (line.length > maxLength) {
     return false;
   }
     return true;
 }
-checkLength();
+checkLength(line,15);
